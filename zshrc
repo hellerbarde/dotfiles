@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-export ZSH_THEME="norm-phil"
+#export ZSH_THEME="norm-phil"
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
@@ -28,6 +28,37 @@ plugins=(rbenv battery pip lol mercurial github \
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs... Absolutely!!
+
+# ###############
+# zshell Prompt #
+# ###############
+PROMPT='%{$fg[yellow]%}λ %{$fg[green]%}%c $(git_prompt_custom)%{$fg[yellow]%}» %{$reset_color%}'
+
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[blue]%}"
+ZSH_THEME_GIT_PROMPT_SUFFIX=""
+ZSH_THEME_GIT_PROMPT_DIRTY=""
+ZSH_THEME_GIT_PROMPT_CLEAN=""
+
+ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[blue]%}?%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_ADDED="%{$fg[green]%}+%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_MODIFIED="%{$fg[red]%}*%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_RENAMED="%{$fg[blue]%}R%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DELETED="%{$fg[red]%}-%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[red]%}U%{$reset_color%}"
+
+git_prompt_custom() {
+    PROMPT="$(git_prompt_info)"
+    GIT_STATUS="$(git_prompt_status)"
+    if [[ ! "$GIT_STATUS" = "" ]]; then
+        PROMPT="$PROMPT%{$fg[blue]%}($GIT_STATUS%{$fg[blue]%}) "
+    elif [[ ! "$PROMPT" = "" ]]; then
+        PROMPT="$PROMPT "
+    fi
+    echo $PROMPT
+}
+# ############
+# end prompt #
+# ############
 
 
 # miscellaneous aliases {{{
@@ -56,4 +87,5 @@ export PYTHONPATH="~/.local"
 export GNUTERM="wxt"
 
 # end variables }}}
+
 
