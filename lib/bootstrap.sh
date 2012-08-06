@@ -21,7 +21,7 @@ then
 fi
 
 echo "Cloning hellerbarde/dotfiles repository";
-git clone git@github.com:hellerbarde/dotfiles.git ~/.dotfiles
+git clone https://github.com/hellerbarde/dotfiles.git ~/.dotfiles
 
 echo "Linking stuff"
 echo ".zshrc"
