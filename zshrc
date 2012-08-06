@@ -32,7 +32,14 @@ source $ZSH/oh-my-zsh.sh
 # ###############
 # zshell Prompt #
 # ###############
-PROMPT='%{$fg[yellow]%}λ %{$fg[green]%}%c $(git_prompt_custom)%{$fg[yellow]%}» %{$reset_color%}'
+
+if [[ "$(id -u)" = "0" ]]; then
+    PROMPT_COLOR="$fg[red]";
+else
+    PROMPT_COLOR="$fg[yellow]";
+fi
+
+PROMPT='%{$PROMPT_COLOR%}λ %{$fg[green]%}%c $(git_prompt_custom)%{$PROMPT_COLOR%}» %{$reset_color%}'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[blue]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX=""
