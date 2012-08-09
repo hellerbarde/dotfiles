@@ -40,6 +40,7 @@ else
 fi
 
 PROMPT='%{$PROMPT_COLOR%}λ %{$fg[green]%}%c $(git_prompt_custom)%{$PROMPT_COLOR%}» %{$reset_color%}'
+RPROMPT='%{$PROMPT_COLOR%}%m%{$reset_color%}'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[blue]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX=""
