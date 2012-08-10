@@ -8,6 +8,7 @@ color desert
 let g:Powerline_symbols = 'unicode'
 let g:Powerline_cache_enabled = 1
 let g:Powerline_colorscheme = 'desertEx'
+set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors
 
 " }}}
 
