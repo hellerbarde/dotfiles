@@ -1,0 +1,23 @@
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+color desert
+" Powerline {{{
+
+let g:Powerline_symbols = 'unicode'
+let g:Powerline_cache_enabled = 1
+let g:Powerline_colorscheme = 'desertEx'
+
+" }}}
+
+let NERDChristmasTree=0
+let NERDTreeHighlightCursorLine=1
+let NERDTreeHijackNetrw=1
+let NERDTreeMouseMode=2
+"let NERDTreeQuitOnOpen=1
+let NERDTreeShowBookmarks=1
+let NERDTreeWinSize=20
+let NERDTreeDirArrows=1
+let NERDTreeMinimalUI=1
+
