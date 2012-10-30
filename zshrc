@@ -80,6 +80,11 @@ alias grep="grep --color=auto -E"
 alias cal='cal -3m'
 alias open='xdg-open'
 
+alias  t='python2 ~/projects/python/t/t.py --task-dir ~/tasks --list tasks'
+alias th='python2 ~/projects/python/t/t.py --task-dir ~/tasks --list tasks_houseofkids'
+alias tp='python2 ~/projects/python/t/t.py --task-dir . --list .tasks'
+
+
 # end aliases }}}
 
 # variables {{{
