@@ -1,0 +1,9 @@
+ruby
+script
+lua
+logs
+tcl
+xfer
+*.log
+irc.conf
+script.conf
