@@ -1,0 +1,6 @@
+launchbar
+theme alduin-smooth
+preferred_alternatives desktop_switcher
+
+panel
+	position top
