@@ -1,0 +1,181 @@
+! settings -------------------------------------------------------------
+!Xft*dpi:        138
+!Xft*antialias:  false
+!Xft*rgba:       rgb
+!Xft*hinting:    true
+!Xft*hintstyle:  hintnone
+
+Xcursor*theme:            Neutral
+gnuplot*background: white
+gnuplot*foreground: black 
+
+! xterm settings -------------------------------------------------------
+
+!set gcr=n-v-c:ver100-Cursor/lCursor,ve:ver10-Cursor,o:hor25-Cursor,i-ci:ver10-Cursor/lCursor,r-cr:ver100-Cursor/lCursor,sm:ver100-Cursor-blinkwait175-blinkoff150-blinkon175
+XTerm*dynamicColor:      true
+XTerm*geometry:           80x25
+XTerm*toolBar:            false
+XTerm*utf8:               1
+XTerm*background: black
+XTerm*font: -*-liberation mono-medium-*
+!XTerm*boldFont: fixed
+!XTerm*fontsize: 8
+
+! my old urxvt settings -------------------------------------------------------
+
+!urxvt*utf8:               1
+!urxvt*perl-ext-common:      default,matcher
+!urxvt*matcher.button:       1
+!urxvt*matcher.pattern.1:    \bwww\.[\w-]\.[\w./?&@#-]*[\w/-]
+!urxvt*urlLauncher: uzbl -u 
+!urxvt*perl-lib: /usr/lib/urxvt/perl/
+!urxvt*colorMode: on
+!urxvt*cursorUnderline: true
+! urxvt*background: black
+! urxvt*foreground: white
+!!urxvt*fading: 1
+!urxvt*fadeColor: black
+!urxvt*transparent: true
+!urxvt*shading: 153
+!urxvt*scrollBar: 0
+!urxvt*borderless: 1
+!urxvt*font: xft:Bitstream Vera Sans Mono:size=8
+!urxvt*boldFont: xft:Bitstream Vera Sans Mono:size=8:style=Bold
+!urxvt*font: xft:ProggySquareTT:size=10i
+!urxvt*boldFont: xft:ProggySquareTT:size=10
+!urxvt*font: xft:Inconsolata:size=8
+!urxvt*boldFont: xft:Inconsolata:size=8:style=Bold
+!urxvt*scrollTtyKeypress: 1
+!urxvt*scrollTtyOutput: 0
+!urxvt*loginShell: true
+!urxvt*depth: 24
+!#urxvt*background: rgba:0000/0000/0000/df00
+!urxvt*background: #000
+!urxvt*colorUL:            #86A2BE
+!urxvt*underlineColor:     #86A2BE
+!#urxvt*termName: urxvt
+
+
+!-------------------------------------------------------------------------------
+!
+!	U R X V T - Setting
+!
+!real transparency with active compositor
+URxvt*depth:                          32
+URxvt*background:                     rgba:0000/0000/0000/dddd
+!
+URxvt*scrollBar:                       false
+!URxvt*scrollColor:                    grey13
+!URxvt*troughColor:                    black
+!URxvt*scrollBar_floating:             true
+!URxvt*scrollBar_right:                true
+URxvt*cursorColor:                     darkorange1
+URxvt*foreground:                      grey75
+URxvt*saveLines:                       7777
+URxvt*cursorBlink:                     false
+URxvt*termName:                        rxvt-256color
+URxvt*font:                            xft:DejaVu Sans Mono:size=10
+URxvt*letterSpace:                     -1
+URxvt*boldFont:                        xft:DejaVu Sans Mono:size=10:bold
+URxvt*colorBD:                         orange
+URxvt*cutchars:                        ()*,<>[]{}|`
+!URxvt.tabbed.tabbar-fg:               6
+!URxvt.tabbed.tabbar-bg:               0
+!URxvt.tabbed.tab-fg:                  0
+!URxvt.tabbed.tab-bg:                  3
+URxvt*iso14755_52:			false
+
+
+! Colors
+
+
+!Phraktures Theme Eight
+!http://phraktured.net/terminal-colors/theme-eight.html
+*background: rgb:10/10/10
+*foreground: rgb:d3/d3/d3
+*color0:     rgb:10/10/10
+*color1:     rgb:cd/5c/5c
+*color2:     rgb:2e/8b/57
+*color3:     rgb:f0/e6/8c
+*color4:     rgb:b0/c4/de
+*color5:     rgb:ba/55/d3
+*color6:     rgb:46/82/b4
+*color7:     rgb:d3/d3/d3
+*color8:     rgb:4d/4d/4d
+*color9:     rgb:ff/6a/6a
+*color10:    rgb:8f/bc/8f
+*color11:    rgb:ff/fa/cd
+*color12:    rgb:1e/90/ff
+*color13:    rgb:db/70/93
+*color14:    rgb:5f/9e/a0
+*color15:    rgb:ff/ff/ff
+
+
+! tangoesque scheme
+!#urxvt*background:  #215992
+!#urxvt*foreground:  #ffffff
+! Black
+urxvt*color0: rgba:0000/0000/0000/df00
+!#urxvt*color0:      #000000
+urxvt*color8:      #555753
+! Red
+urxvt*color1:      #ff6565
+urxvt*color9:      #ff8d8d
+! Green
+urxvt*color2:      #93d44f
+urxvt*color10:     #c8e7a8
+! Yellow
+urxvt*color3:      #eab93d
+urxvt*color11:     #ffc123
+! Blue
+urxvt*color4:      #204a87
+urxvt*color12:     #3465a4
+! Mangenta
+urxvt*color5:      #ce5c00
+urxvt*color13:     #f57900
+! Cyan 
+urxvt*color6:      #89b6e2
+urxvt*color14:     #46a4ff
+! White
+urxvt*color7:      #cccccc
+urxvt*color15:     #ffffff
+
+!Pnevma1
+!*color0: #2F2E2D
+!*color8: #4A4845
+!*color1: #A36666
+!*color9: #D78787
+!*color2: #8FA57E
+!*color10: #A9BA9C
+!*color3: #D7AF87
+!*color11: #E4C9AF
+!*color4: #7FA5BD
+!*color12: #A1BDCE
+!*color5: #C79EC4
+!*color13: #D7BEDA
+!*color6: #8ADBB4
+!*color14: #B1E7DD
+!*color7: #D0D0D0
+!*color15: #EFEFEF
+
+! Scrolling in urxvt -------------------------------------------------------
+
+
+!# Scrolling on wheel mouse: 4 Lines normally, half a page with shift 
+      XTerm.vt100.translations: #override\n\ 
+!      <Btn4Down>,<Btn4Up>:scroll-back(1,line)\n\ 
+!      <Btn5Down>,<Btn5Up>:scroll-forw(1,line)\n\ 
+      Ctrl<Btn4Down>,<Btn4Up>:scroll-back(1,page)\n\ 
+      Ctrl<Btn5Down>,<Btn5Up>:scroll-forw(1,page)\n\ 
+Shift<Btn4Down>,<Btn4Up>:scroll-back(1,halfpage)\n\ 
+Shift<Btn5Down>,<Btn5Up>:scroll-forw(1,halfpage)\n\ 
+None<Btn4Down>,<Btn4Up>:scroll-one-line-down()scroll-one-line-down()scroll-one-line-down()scroll-one-line-down()scroll-one-line-down()\n\ 
+None<Btn5Down>,<Btn5Up>:scroll-one-line-up()scroll-one-line-up()scroll-one-line-up()scroll-one-line-up()scroll-one-line-up()\n\      
+
+
+!# In the scrollbar we map buttons 5 & 4 to 1 and 2 otherwise, core dump 
+!# This will move proportionnaly to cursor position but we dont know how to 
+!# program the same exact behavior as in the text widget. 
+      XTerm.vt100.Scrollbar.translations: #override\n\ 
+      <Btn5Down>: StartScroll(Forward)\n 
+      <Btn4Down>: StartScroll(Backward)\n
