@@ -91,10 +91,10 @@ alias tp='python2 ~/projects/python/t/t.py --task-dir . --list .tasks'
 
 export EDITOR="vim"
 
-export PATH="/home/phil/.gem/ruby/1.8/bin:$PATH"
-export PATH="/home/phil/.local/bin:$PATH"
+export PATH="$HOME/.gem/ruby/1.8/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
-export PYTHONPATH="~/.local"
+export PYTHONPATH="$HOME/.local"
 
 # get octave to use gnuplots pretty interface
 export GNUTERM="wxt"
