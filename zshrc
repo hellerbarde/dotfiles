@@ -34,6 +34,15 @@ unsetopt correct_all
 # zshell Prompt #
 # ###############
 
+
+# keychain options
+#
+# --eval          output in format suitable for eval
+# --agents ssh    start the ssh agent. gpg is another option.
+# -Q              reuse running ssh-agent if exists
+# --quiet         only print warning or above
+#
+
 KEYCHAIN_ENV=~/.keychain-env
 keychain --eval --agents ssh -Q --quiet ~/.ssh/id_rsa >$KEYCHAIN_ENV
 . $KEYCHAIN_ENV >/dev/null
