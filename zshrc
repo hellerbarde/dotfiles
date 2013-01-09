@@ -22,10 +22,11 @@ export ZSH=$HOME/.oh-my-zsh
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(rbenv battery pip lol mercurial github \
-         git command-not-found dircycle dirpersist encode64 \
-         extract git-flow lol )
+         git command-not-found dircycle encode64 \
+         extract git-flow )
 
 source $ZSH/oh-my-zsh.sh
+unsetopt correct_all
 
 # Customize to your needs... Absolutely!!
 
@@ -33,9 +34,15 @@ source $ZSH/oh-my-zsh.sh
 # zshell Prompt #
 # ###############
 
+KEYCHAIN_ENV=~/.keychain-env
+keychain --eval --agents ssh -Q --quiet ~/.ssh/id_rsa >$KEYCHAIN_ENV
+. $KEYCHAIN_ENV >/dev/null
+
 if [[ "$(id -u)" = "0" ]]; then
+    # if root, make prompt red
     PROMPT_COLOR="$fg[red]";
 else
+    # else its yellow
     PROMPT_COLOR="$fg[yellow]";
 fi
 
@@ -91,10 +98,10 @@ alias tp='python2 ~/projects/python/t/t.py --task-dir . --list .tasks'
 
 export EDITOR="vim"
 
-export PATH="/home/phil/.gem/ruby/1.8/bin:$PATH"
-export PATH="/home/phil/.local/bin:$PATH"
+export PATH="$HOME/.gem/ruby/1.8/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
-export PYTHONPATH="~/.local"
+export PYTHONPATH="$HOME/.local"
 
 # get octave to use gnuplots pretty interface
 export GNUTERM="wxt"
