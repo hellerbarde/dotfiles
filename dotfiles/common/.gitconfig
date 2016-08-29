@@ -1,0 +1,22 @@
+[user]
+	email = git@codechaos.ch
+	name = Philip Stark
+[push]
+	default = simple
+[gui]
+	editor = subl
+[merge]
+	tool = meld
+[diff]
+	tool = meld
+[core]
+#	askpass = /usr/bin/ksshaskpass
+
+
+[cola]
+	fontdiff = Monospace,14,-1,5,50,0,0,0,0,0
+	textwidth = 72
+	inotify = true
+[credential]
+    helper = gnome-keyring
+#	helper = /usr/share/git/credential/gnome-keyring/git-credential-gnome-keyring

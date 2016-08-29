@@ -1,0 +1,20 @@
+# LFTP
+set ftp:ssl-force yes
+set ftp:ssl-protect-data no
+set ftp:ssl-protect-fxp yes
+set ftp:timezone ""
+set ftp:port-range 10400-10499
+set ftp:fix-pasv-address no
+
+#SSL
+set ssl:verify-certificate no
+
+set mirror:set-permissions no
+set mirror:exclude-regex "((^|\\/)\\[|^[Ss]ample\\/|^[Pp]roof\\/)"
+set mirror:order "*.sfv *.sig *.md5* *.sum *.rar * */"
+
+debug 4
+set prompt "\[\033[1;31m\]\u\[\033[0m\]\@\[\033[1;32m\]\h\[\033[0m\]:\[\033[1;34m\]\w\[\033[0m\]\n[\S] > "
+
+set cmd:save-rl-history no
+set cmd:save-cwd-history no

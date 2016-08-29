@@ -1,11 +1,12 @@
 # Dotfiles #
 
-
 These are my dotfiles.
+
+## dotgit
+
+From 2016-08-29 on, this repository is managed with dotgit.
 
 ## Bootstrapping ##
 
-    wget https://github.com/hellerbarde/dotfiles/raw/master/lib/bootstrap.sh && \
-    bash bootstrap.sh
-
+    dotgit restore
 

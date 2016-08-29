@@ -1,0 +1,10 @@
+[extensions]
+hgk =
+
+[ui]
+username = "Philip Stark <phil.stark@sos.ethz.ch>"
+
+[web]
+cacerts=
+[hostfingerprints]
+sosbytes.ethz.ch = 7e:75:df:3d:72:4e:4e:79:35:1d:84:af:fa:73:a3:65:43:82:75:8a

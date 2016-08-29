@@ -1,0 +1,21 @@
+# Dotfiles
+
+# some of the common files should probably be broken out into machine-specific files.
+
+## common
+.bashrc
+.bash_profile
+.bash_logout
+.gitconfig
+.hgrc
+.zshrc
+
+
+## laptop only
+
+.lftprc:x240-phil
+.vimrc:x240-phil
+
+.config/nvim/init.vim:x240-phil
+.config/mpd/mpd.conf:x240-phil
+.config/deadbeef/config:x240-phil
